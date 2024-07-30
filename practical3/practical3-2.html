@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elaborate CSS Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #b6b6b6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            background-color: #ffffff63;
+            border-radius: 10px;
+            box-shadow: 20px 20px 20px rgb(202, 68, 68);
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #2b0497;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box:hover {
+            transform: scale(1.1);
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .text {
+            color: white;
+            font-size: 24px;
+            text-align: center;
+        }
+        .button {
+            background-color: #04665f;
+            color: rgb(255, 255, 255);
+            padding: 10px 200px;
+            border: 5px solid black;
+            box-shadow: 12px 12px 12px 12px rgb(from rgb(0, 199, 182) r g b);
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 1s ease, transform 1s ease;
+        }
+        .button:hover {
+            background-color: #6e3ff0;
+            transform: translateY(-3px);
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #888;
+        }
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            .box {
+                width: 150px;
+                height: 150px;
+            }
+            .text {
+                font-size: 118px;
+            }
+            .button {
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Practice CSS</h1>
+        
+        <div class="box">
+            <p class="text">I am THE BOX</p>
+        </div>
+        
+        <button class="button">Click Me</button>
+        
+    </div>
+</body>
+</html>
